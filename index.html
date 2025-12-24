@@ -944,10 +944,9 @@
             mouseX = (event.clientX / window.innerWidth) * 2 - 1;
             mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
         });
-const message = encodeURIComponent(
-  "Hi, I saw your portfolio and want to start a project."
-);
-
+  // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
             // Rotate particles
             particlesMesh.rotation.y += 0.001;
             particlesMesh.rotation.x += 0.0005;
